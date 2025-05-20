@@ -14,7 +14,7 @@ export default function Home() {
       name: 'JPG Compressor',
       path: '/jpg-compressor',
       desc: 'Reduce JPG file size without losing quality.',
-      icon: '/icons/jpg-compressor.png',
+      icon: '/icons/icon-jpg-compressor.png',
     },
     {
       name: 'PDF Compressor',
@@ -26,19 +26,19 @@ export default function Home() {
       name: 'JPG to PDF',
       path: '/jpg-to-pdf',
       desc: 'Convert JPG images to PDF documents.',
-      icon: '/icons/jpg-to-pdf.png',
+      icon: '/images/og-jpg-to-pdf.jpg',
     },
     {
       name: 'Bitmap to JPG',
       path: '/bitmap-to-jpg',
       desc: 'Convert BMP images to JPG format.',
-      icon: '/icons/bitmap-to-jpg.png',
+      icon: '/images/og-bitmap-to-jpg.jpg',
     },
     {
       name: 'HEIC to JPG',
       path: '/heic-to-jpg',
       desc: 'Convert HEIC images to JPG format.',
-      icon: '/icons/heic-to-jpg.png',
+      icon: '/images/og-heic-to-jpg.jpg',
     },
   ];
 

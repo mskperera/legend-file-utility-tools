@@ -1,4 +1,5 @@
 // components/FileDropzone.jsx
+import { FileText } from 'lucide-react';
 export default function FileDropzone({ accept, multiple, onDrop, onFileChange, inputId, label, subLabel }) {
   return (
     <div
