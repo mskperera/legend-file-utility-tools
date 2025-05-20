@@ -58,7 +58,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <CustomLink href="/" className="flex items-center">
           <Image src="/images/logo.png" alt="Logo" width={40} height={40} priority />
-          <span className="ml-2 text-xl font-bold">Legend File Utility Tools</span>
+          <span className="ml-2 text-xl font-bold">Legend Utility Tools</span>
         </CustomLink>
 
         {/* Desktop Menu */}
