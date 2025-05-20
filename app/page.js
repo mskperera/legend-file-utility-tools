@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <div className="text-center">
-      <h1 className="text-4xl font-bold mb-6 text-gray-800">File Utility Tools</h1>
+      <h1 className="text-4xl font-bold mb-6 text-gray-800">Legend Utility Tools</h1>
       <p className="text-lg mb-8 text-gray-600">Fast, secure, and free tools for PDF and image processing.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {tools.map((tool) => (

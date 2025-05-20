@@ -10,8 +10,12 @@ export async function POST(request) {
 
     console.log('File received:', { name: file?.name, type: file?.type, size: file?.size });
 
-    if (!file || !['image/heic', 'image/heif'].includes(file.type)) {
-      console.log('Invalid file:', { name: file?.name, type: file?.type });
+   const validMimeTypes = ['image/heic', 'image/heif', 'image/heic-sequence', 'application/octet-stream'];
+    const validExtensions = ['.heic', '.heif'];
+    const fileExtension = file?.name.toLowerCase().slice(-5);
+
+    if (!file || !validMimeTypes.includes(file.type) || !validExtensions.includes(fileExtension)) {
+      console.log('Invalid file:', { name: file?.name, type: file?.type, extension: fileExtension });
       return NextResponse.json({ error: 'Please upload a valid HEIC file.' }, { status: 400 });
     }
 
