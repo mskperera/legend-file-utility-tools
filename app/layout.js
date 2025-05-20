@@ -43,6 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/nprogress.css" />
       <style>{`
   #nprogress .bar {
@@ -68,7 +69,7 @@ export default function RootLayout({ children }) {
         <ProgressBar />
         </Suspense>
         <Navbar />
-        <main className="flex-grow container mx-auto px-4 py-8">{children}</main>
+         <main className="min-h-screen container mx-auto px-4 py-6 sm:px-6 lg:px-8">{children}</main>
         <Footer />
       </body>
     </html>

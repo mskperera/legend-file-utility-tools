@@ -55,26 +55,25 @@ export default function Navbar() {
 
   return (
     <nav className="bg-sky-600 text-white shadow-md">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
         <CustomLink href="/" className="flex items-center">
           <Image src="/images/logo.png" alt="Logo" width={40} height={40} priority />
-          <span className="ml-2 text-xl font-bold">Legend Utility Tools</span>
+          <span className="ml-2 text-xl sm:text-2xl font-bold">Legend Utility Tools</span>
         </CustomLink>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-4 sm:space-x-6">
           {menuGroups.map((group) => (
             <div key={group.name} className="relative group">
               <button
-                className="flex items-center py-2 px-3 rounded-md hover:bg-sky-700 focus:outline-none focus:bg-sky-700"
+                className="flex items-center py-2 px-3 sm:px-4 rounded-md hover:bg-sky-700 focus:outline-none focus:bg-sky-700 text-sm sm:text-base"
                 onClick={() => toggleDropdown(group.name)}
               >
                 {group.icon}
                 {group.name}
               </button>
               <div
-                className="absolute left-0 top-full w-48 bg-white text-gray-800 rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200 ease-in-out z-10"
-                style={{ transform: 'translateY(0)' }}
+                className="absolute left-0 top-full w-40 sm:w-48 bg-white text-gray-800 rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200 ease-in-out z-10"
               >
                 <div className="py-2">
                   {group.items.map((item) => (
@@ -94,7 +93,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden focus:outline-none" onClick={toggleMobileMenu}>
+        <button className="md:hidden focus:outline-none p-2" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
             <XMarkIcon className="w-6 h-6" />
           ) : (
@@ -109,14 +108,14 @@ export default function Navbar() {
           {menuGroups.map((group) => (
             <div key={group.name} className="border-b border-sky-600 last:border-b-0">
               <button
-                className="flex items-center w-full text-left py-2 hover:bg-sky-800 focus:outline-none"
+                className="flex items-center w-full text-left py-3 hover:bg-sky-800 focus:outline-none text-base"
                 onClick={() => toggleDropdown(group.name)}
               >
                 {group.icon}
                 {group.name}
               </button>
               {openDropdown === group.name && (
-                <div className="pl-4 pb-2">
+                <div className="pl-6 pb-2">
                   {group.items.map((item) => (
                     <CustomLink
                       key={item.name}

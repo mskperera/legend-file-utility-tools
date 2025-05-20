@@ -44,28 +44,27 @@ export default function Home() {
 
   return (
     <div className="text-center">
-      <h1 className="text-4xl font-bold mb-6 text-gray-800">Legend Utility Tools</h1>
-      <p className="text-lg mb-8 text-gray-600">Fast, secure, and free tools for PDF and image processing.</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Legend Utility Tools</h1>
+      <p className="text-base sm:text-lg mb-8 text-gray-600">Fast, secure, and free tools for PDF and image processing.</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {tools.map((tool) => (
           <CustomLink
             key={tool.path}
             href={tool.path}
-            className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition group"
+            className="block p-4 sm:p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition group"
           >
-            {/* <div className="flex items-center justify-center mb-4">
+            <div className="flex items-center justify-center mb-4">
               <img
                 src={tool.icon}
                 alt={`${tool.name} icon`}
-                className="h-10 w-10 object-contain group-hover:scale-110 transition-transform"
-              /></div> */}
-           
-            <h2 className="text-2xl font-semibold text-gray-800">{tool.name}</h2> 
-            <p className="mt-2 text-gray-600">{tool.desc}</p>
+                className="h-10 w-10 sm:h-12 sm:w-12 object-contain group-hover:scale-110 transition-transform"
+              />
+            </div>
+            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">{tool.name}</h2>
+            <p className="mt-2 text-gray-600 text-sm sm:text-base">{tool.desc}</p>
           </CustomLink>
         ))}
-
-             {/* <AdBanner /> */}
+        {/* <AdBanner /> */}
       </div>
     </div>
   );

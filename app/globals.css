@@ -7,8 +7,30 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 #nprogress .bar {
   bottom: 0 !important;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  h2 {
+    font-size: 1.25rem !important;
+  }
+  h3 {
+    font-size: 1rem !important;
+  }
+}
+
+/* Ensure touch-friendly spacing */
+.btn {
+  @apply px-4 py-2 text-sm sm:text-base;
 }

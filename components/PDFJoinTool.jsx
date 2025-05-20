@@ -31,15 +31,13 @@ const DraggableFile = ({ file, index, moveFile, removeFile }) => {
   return (
     <div
       ref={(node) => drag(drop(node))}
-      className={`flex items-center p-3 bg-white rounded-lg shadow-sm mb-2 border border-gray-200 hover:bg-gray-50 transition-all duration-200 ${
-        isDragging ? 'opacity-50' : 'opacity-100'
-      }`}
+      className={`flex items-center p-3 bg-white rounded-lg shadow-sm mb-2 border border-gray-200 hover:bg-gray-50 transition-all duration-200 ${isDragging ? 'opacity-50' : 'opacity-100'}`}
     >
-      <GripVertical className="w-5 h-5 text-gray-400 cursor-move mr-3" />
-      <FileText className="w-5 h-5 text-sky-600 mr-3" />
-      <div className="flex-grow">
-        <p className="text-sm font-medium text-gray-900">{file.name}</p>
-        <p className="text-xs text-gray-500">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
+      <GripVertical className="w-5 h-5 text-gray-400 cursor-move mr-2 sm:mr-3" />
+      <FileText className="w-5 h-5 text-sky-600 mr-2 sm:mr-3" />
+      <div className="flex-grow text-sm sm:text-base">
+        <p className="font-medium text-gray-900">{file.name}</p>
+        <p className="text-gray-500">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
       </div>
       <button
         onClick={() => removeFile(index)}
@@ -112,51 +110,26 @@ export default function PDFJoinTool() {
         title="PDF Join"
         description="Combine multiple PDF files into one document. Drag and drop to reorder."
       >
-
         <FileDropzone
-  accept="application/pdf"
-  multiple
-  onDrop={handleDrop}
-  onFileChange={handleFileChange}
-  inputId="pdf-upload"
-  label="Drag and drop PDF files here or click to upload"
-  subLabel="Supports multiple PDF files"
-/>
-        {/* <div
-          className="mb-6 p-6 border-2 border-dashed border-gray-300 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-200"
+          accept="application/pdf"
+          multiple
           onDrop={handleDrop}
-          onDragOver={(e) => e.preventDefault()}
-        >
-          <input
-            type="file"
-            accept="application/pdf"
-            multiple
-            onChange={handleFileChange}
-            className="hidden"
-            id="pdf-upload"
-          />
-          <label
-            htmlFor="pdf-upload"
-            className="flex flex-col items-center justify-center cursor-pointer"
-          >
-            <FileText className="w-12 h-12 text-sky-600 mb-2" />
-            <p className="text-sm font-medium text-gray-700">
-              Drag and drop PDF files here or click to upload
-            </p>
-            <p className="text-xs text-gray-500 mt-1">Supports multiple PDF files</p>
-          </label>
-        </div> */}
+          onFileChange={handleFileChange}
+          inputId="pdf-upload"
+          label="Drag and drop PDF files here or click to upload"
+          subLabel="Supports multiple PDF files"
+        />
 
         {files.length > 0 && (
           <div className="mb-6">
-            <div className="flex items-center justify-between mb-3">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
               <h3 className="text-lg font-semibold text-gray-900">Uploaded Files</h3>
-              <p className="text-sm text-sky-600 flex items-center gap-2" aria-label="Drag and drop to reorder PDFs">
+              <p className="text-sm text-sky-600 flex items-center gap-2 mt-2 sm:mt-0" aria-label="Drag and drop to reorder PDFs">
                 <GripVertical className="w-4 h-4" />
                 Drag to reorder PDFs
               </p>
             </div>
-            <div className="space-y-2 max-h-64 overflow-y-auto p-2 bg-gray-50 rounded-lg">
+            <div className="space-y-2 max-h-48 sm:max-h-64 overflow-y-auto p-2 bg-gray-50 rounded-lg">
               {files.map((file, index) => (
                 <DraggableFile
                   key={`${file.name}-${index}`}
@@ -175,7 +148,7 @@ export default function PDFJoinTool() {
         <button
           onClick={handleJoin}
           disabled={isProcessing || files.length < 2}
-          className="w-full bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors duration-200 font-medium"
+          className="w-full bg-sky-600 text-white px-4 py-3 rounded-lg hover:bg-sky-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors duration-200 font-medium text-sm sm:text-base"
         >
           {isProcessing ? 'Processing...' : 'Join PDFs'}
         </button>
