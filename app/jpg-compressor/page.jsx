@@ -3,7 +3,7 @@ import JPGCompressorTool from '@/components/JPGCompressorTool';
 
 export async function generateMetadata() {
   return {
-    title: 'Compress JPG Images Online – Fast, Free & High Quality | File Utility Tools',
+    title: 'Compress JPG Images Online – Fast, Free & High Quality | Legend Utility Tools',
     description:
       'Quickly compress JPG images online to reduce file size without losing quality. Secure, easy-to-use, and completely free.',
     keywords: [
@@ -15,15 +15,15 @@ export async function generateMetadata() {
       'file utility tools',
     ],
     openGraph: {
-      title: 'Compress JPG Images Online – Fast, Free & High Quality | File Utility Tools',
+      title: 'Compress JPG Images Online – Fast, Free & High Quality | Legend Utility Tools',
       description:
         'Quickly compress JPG images online to reduce file size without losing quality. Secure, easy-to-use, and completely free.',
-      url: 'https://fileutilitytools.legendbyte.com/jpg-compressor',
+      url: 'https://utilitytools.legendbyte.com/jpg-compressor',
       type: 'website',
-      siteName: 'File Utility Tools',
+      siteName: 'Legend Utility Tools',
       images: [
         {
-          url: 'https://fileutilitytools.legendbyte.com/og-jpg-compressor.jpg', // Replace with your actual OG image URL
+          url: 'https://utilitytools.legendbyte.com/images/og-jpg-compressor.jpg', // Replace with your actual OG image URL
           width: 1200,
           height: 630,
           alt: 'Compress JPG Images Online',

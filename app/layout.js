@@ -29,7 +29,7 @@ keywords: [
  openGraph: {
     title: 'Legend Utility Tools',
     description: 'Free online tools for PDF and image processing.',
-    url: 'https://fileutilitytools.legendbyte.com',
+    url: 'https://utilitytools.legendbyte.com',
     type: 'website',
   },
   twitter: {

@@ -3,19 +3,19 @@ import PDFCompressorTool from '@/components/PDFCompressorTool';
 
 export async function generateMetadata() {
   return {
-    title: 'Compress PDF Files Online - Free PDF Compressor | File Utility Tools',
+    title: 'Compress PDF Files Online - Free PDF Compressor | Legend Utility Tools',
     description:
       'Reduce PDF file size quickly and easily with our free online PDF compressor. Secure, fast, and no software installation needed.',
     openGraph: {
-      title: 'Compress PDF Files Online - Free PDF Compressor | File Utility Tools',
+      title: 'Compress PDF Files Online - Free PDF Compressor | Legend Utility Tools',
       description:
         'Reduce PDF file size quickly and easily with our free online PDF compressor. Secure, fast, and no software installation needed.',
-      url: 'https://fileutilitytools.legendbyte.com/pdf-compressor',
+      url: 'https://utilitytools.legendbyte.com/pdf-compressor',
       type: 'website',
-      siteName: 'File Utility Tools',
+      siteName: 'Legend Utility Tools',
       images: [
         {
-          url: 'https://fileutilitytools.legendbyte.com/og-pdf-compressor.jpg', // Replace with your actual image file
+          url: 'https://utilitytools.legendbyte.com/images/og-pdf-compressor.jpg', // Replace with your actual image file
           width: 1200,
           height: 630,
           alt: 'Compress PDF Files Online',

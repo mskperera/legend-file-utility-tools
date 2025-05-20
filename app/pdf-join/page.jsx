@@ -3,7 +3,7 @@ import PDFJoinTool from "@/components/PDFJoinTool";
 
 export async function generateMetadata() {
   return {
-    title: 'Join PDF Files Online – Fast & Secure | File Utility Tools',
+    title: 'Join PDF Files Online – Fast & Secure | Legend Utility Tools',
     description: 'Merge multiple PDF files into one PDF document quickly, securely, and for free. Easy online PDF joiner tool.',
     keywords: [
       'PDF join',
@@ -14,14 +14,14 @@ export async function generateMetadata() {
       'file utility tools',
     ],
     openGraph: {
-      title: 'Join PDF Files Online – Fast & Secure | File Utility Tools',
+      title: 'Join PDF Files Online – Fast & Secure | Legend Utility Tools',
       description: 'Merge multiple PDF files into one PDF document quickly, securely, and for free. Easy online PDF joiner tool.',
-      url: 'https://fileutilitytools.legendbyte.com/pdf-join',
+      url: 'https://utilitytools.legendbyte.com/pdf-join',
       type: 'website',
-      siteName: 'File Utility Tools',
+      siteName: 'Legend Utility Tools',
       images: [
         {
-          url: 'https://fileutilitytools.legendbyte.com/og-pdf-join.jpg', // Replace with your OG image URL
+          url: 'https://utilitytools.legendbyte.com/images/og-pdf-join.jpg', // Replace with your OG image URL
           width: 1200,
           height: 630,
           alt: 'Join PDF Files Online',
