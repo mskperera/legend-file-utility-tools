@@ -13,9 +13,20 @@ export const metadata = {
     default: 'Legend Utility Tools - PDF & Image Processing',
     template: '%s | Legend Utility Tools',
   },
-  description: 'Professional tools for PDF joining, compression, image conversion, and more. Fast, secure, and easy to use.',
-  keywords: ['PDF tools', 'image converter', 'file compressor', 'PDF join', 'JPG compressor'],
-  openGraph: {
+description: 'Free online tools to compress JPG and PDF files, convert HEIC, BMP, and JPG to PDF, and merge PDF documents. Fast, secure, and easy to use with no installation needed.',
+keywords: [
+  'compress JPG online',
+  'compress PDF online',
+  'JPG to PDF converter',
+  'merge PDF files',
+  'HEIC to JPG converter',
+  'BMP to JPG converter',
+  'reduce image file size',
+  'free image compressor',
+  'online PDF combiner',
+  'file conversion tools'
+],
+ openGraph: {
     title: 'Legend Utility Tools',
     description: 'Free online tools for PDF and image processing.',
     url: 'https://fileutilitytools.legendbyte.com',

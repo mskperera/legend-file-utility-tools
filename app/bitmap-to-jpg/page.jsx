@@ -3,19 +3,32 @@ import BitmapToJPGTool from '@/components/BitmapToJPGTool';
 
 export async function generateMetadata() {
   return {
-    title: 'Bitmap to JPG - File Utility Tools',
-    description: 'Convert BMP images to JPG format quickly and easily.',
-    keywords: ['Bitmap to JPG', 'BMP to JPG', 'image converter', 'file tools'],
+    title: 'Convert Bitmap to JPG Online - Fast & Free | File Utility Tools',
+    description:
+      'Easily convert BMP images to high-quality JPG format online for free. Quick, secure, and no installation needed.',
+    keywords: [
+      'Bitmap to JPG',
+      'BMP to JPG converter',
+      'image converter online',
+      'free BMP to JPG',
+      'file conversion tools',
+      'image format converter',
+    ],
     openGraph: {
-      title: 'Bitmap to JPG - File Utility Tools',
-      description: 'Convert BMP images to JPG format quickly and easily.',
-      url: 'https://your-site.com/bitmap-to-jpg',
+      title: 'Convert Bitmap to JPG Online - Fast & Free | File Utility Tools',
+      description:
+        'Easily convert BMP images to high-quality JPG format online for free. Quick, secure, and no installation needed.',
+      url: 'https://fileutilitytools.legendbyte.com/bitmap-to-jpg',
       type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'Bitmap to JPG - File Utility Tools',
-      description: 'Convert BMP images to JPG format quickly and easily.',
+      siteName: 'File Utility Tools',
+      images: [
+        {
+          url: 'https://fileutilitytools.legendbyte.com/og-bitmap-to-jpg.jpg', // Update this with your actual image URL
+          width: 1200,
+          height: 630,
+          alt: 'Convert Bitmap to JPG Online',
+        },
+      ],
     },
   };
 }

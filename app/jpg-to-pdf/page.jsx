@@ -3,19 +3,32 @@ import JPGToPDFTool from '@/components/JPGToPDFTool';
 
 export async function generateMetadata() {
   return {
-    title: 'JPG to PDF - File Utility Tools',
-    description: 'Convert JPG images to PDF documents quickly and easily.',
-    keywords: ['JPG to PDF', 'image to PDF', 'file converter', 'PDF tools'],
+    title: 'Convert JPG to PDF Online – Fast & Free | File Utility Tools',
+    description:
+      'Easily convert JPG images to PDF documents online. Quick, secure, and free image-to-PDF converter.',
+    keywords: [
+      'JPG to PDF',
+      'convert JPG to PDF',
+      'image to PDF converter',
+      'online JPG to PDF',
+      'free PDF converter',
+      'file utility tools',
+    ],
     openGraph: {
-      title: 'JPG to PDF - File Utility Tools',
-      description: 'Convert JPG images to PDF documents quickly and easily.',
-      url: 'https://your-site.com/jpg-to-pdf',
+      title: 'Convert JPG to PDF Online – Fast & Free | File Utility Tools',
+      description:
+        'Easily convert JPG images to PDF documents online. Quick, secure, and free image-to-PDF converter.',
+      url: 'https://fileutilitytools.legendbyte.com/jpg-to-pdf',
       type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'JPG to PDF - File Utility Tools',
-      description: 'Convert JPG images to PDF documents quickly and easily.',
+      siteName: 'File Utility Tools',
+      images: [
+        {
+          url: 'https://fileutilitytools.legendbyte.com/og-jpg-to-pdf.jpg', // Replace with your actual OG image URL
+          width: 1200,
+          height: 630,
+          alt: 'Convert JPG to PDF Online',
+        },
+      ],
     },
   };
 }
